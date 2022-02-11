@@ -18,7 +18,7 @@ public class ImagenService {
 
     public Imagen crearImagen(Imagen imagen){
         Imagen imagenActual = new Imagen(imagen.getId(),imagen.getBase64());
-        imagenRepository.save(imagenActual);
+        imagenActual = imagenRepository.save(imagenActual);
         return imagenActual;
     }
 
